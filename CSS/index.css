@@ -24,13 +24,59 @@
 
 }
 
+.text{
+    color: #123bf1;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration: overline;
+    text-decoration: line-through;
+    text-decoration-line: line-through;
+    text-decoration-color: #ff0000;
+    text-decoration-style: wavy;
+    text-decoration-thickness: 2px;
+    /*text-decoration: none;*/
+    text-transform: uppercase;/*queda todo en mayus*/
+    text-transform: lowercase;
+    text-transform: capitalize;
+    /*text-transform: nome; quita lo anterior*/
+    text-indent: 200px;
+    letter-spacing: 10px;
+    line-height: 50px;
+    word-spacing: 12px;
+    white-space: nowrap;
+    text-shadow: 4px 4px 6px #ff0000, 6px 0px 3px #8a2be2;
+
+    font-size: 16px;
+    font-weight: bolder;
+    font-style: italic;
+    font-family: 'Courier New', Courier, monospace;
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
 .bg{          /*color fondo*/
     width: 100%;
     height: 320px;
    /* background: #5f71bf;*/
     background-color: #8c9eef;
-    background-image: url("../RECURSOSCSS/bg/css.jpeg"),
-     url("../RECURSOSCSS/bg/html5.png");
+    background-image: url("../RECURSOSCSS/bg/html5.png"),
+    url("../RECURSOSCSS/bg/css.jpeg");
     background-repeat: no-repeat,no-repeat;
     /*background-size: 100% 320px;*/  /*se ajusta a la medida, 100% ancho 320 altura*/
     background-size: 50px 50px, cover;
