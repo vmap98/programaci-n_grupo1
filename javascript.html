@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+<body>
+
+    <H1>Hola JS!!!</H1>
+
+    <script>
+        alert("Hola desde js!!!");
+        console.log(12);
+        console.error('error');
+        //linea
+        /**
+         * varias lineas
+         */
+
+         //para crear variables var, let, const
+         var a = 12;
+         let b = 12;
+         b = 8;
+         const c = 13;
+
+         let nombre = "Pepe";
+         let apellido = 'Gomez';
+         const nombreCompleto = nombre+ " " + apellido;
+         const nombreCompletoDos = `${nombre} ${apellido}`;
+         let edad = 25;
+         let precio = 250.68;
+         let mayorEda = true;
+         mayorEdad = false;
+
+         let numeros = new Array(4)[1,2,3,4];
+         let pares = [2, 4, 6, 8, 10, 12];
+         let impares = [];
+         let texto = ['a','b','c','d'];
+         let ejm = [12,15.5, 'a','b', true, false, []];
+         console.log(pares[1]);
+         if(pares[3]>=8){
+            console.log('mayor o igual que 8')
+
+         }else if(pares[3]>=4){
+            console.log('mayor o igual que 4');
+
+         }else{
+            console.log('menor que 4');
+
+         }
+         /**
+          * && and
+          *     or
+          * ! negacion
+          * != diferente
+          * > mayor
+          * < menor
+          * >= mayor o igual
+          * == igual
+          * === igual al valor y al tipo de variable
+          */
+
+          console.log(1=='1');
+          console.log(1==='1');
+          let dato = 'a';
+          switch(dato){
+            case 'a':
+                //bloque
+                break;
+            case 'b':
+                //bloque
+                break;
+            default:
+                //bloque
+                break;
+          }
+
+          let listanumeros = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+          for(let i=0;i<listanumeros.length;i++){
+            const num = (listanumeros[i]%2)
+            if(num==0){
+                console.log(listanumeros[i]);
+            }
+          }
+          console.log("For in-----------------")
+          for(let i in listanumeros){
+            console.log(i);
+          }
+
+          console.log("For of-----------------")
+          for(let valor in listanumeros){
+            console.log(valor);
+          }
+
+          console.log("while-----------------")
+          let i = 0;
+          while(i < listanumeros.length){
+            if(i==9) break;
+           // if(i==3) continue;
+            console.log(listanumeros[i]);
+            //i = i + 1;
+            i++;
+          }
+          console.log("do while--------");
+          i = 0;
+          do{
+            console.log(listanumeros[i]);
+            i++
+          } while (i < listanumeros.length)
+          console.log("Foreach-------------")
+          listanumeros.forEach((valor, index) => {
+            console.log( ${index}: ${valor} );
+          });
+
+
+          
+          
+
+
+
+
+
+        
+    </script>
+    
+</body>
+</html>
